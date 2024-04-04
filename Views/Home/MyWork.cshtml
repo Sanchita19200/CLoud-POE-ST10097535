@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "My Work";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+
+        body {
+            background: linear-gradient(to bottom, Red, Orange); /* Gradient background */
+            font-family: Arial, sans-serif;
+        }
+        /* Add your CSS styles here */
+        .craftwork {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust the gap between images */
+        }
+
+        .craft-item {
+            width: 200px; /* Set the width of each craft item */
+        }
+
+            .craft-item img {
+                width: 100%; /* Ensure the image fills the container */
+                height: 200px; /* Set the height of each image */
+                object-fit: cover; /* Maintain aspect ratio and cover container */
+                border-radius: 5px; /* Optional: Add rounded corners */
+            }
+
+        .description {
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background */
+            border-radius: 5px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section">
+            <div class="section-header">My Work</div>
+            <div class="section-content">
+                <p>Welcome to KhumaloCraft! Here, we showcase our beautiful handcrafted items made with love and dedication.</p>
+                <div class="craftwork">
+                    <div class="craft-item">
+                        <img src="https://i.pinimg.com/564x/b3/60/76/b3607645676e55ea0b7dc622043ecf79.jpg" alt="Craftwork 1">
+                        <div class="description">
+                            <h3>Woman In Gold</h3>
+                            <p>Description of the craftwork...</p>
+                            <p>Price: R450.00</p>
+                        </div>
+                    </div>
+                    <div class="craft-item">
+                        <img src="https://i.pinimg.com/564x/6a/0a/73/6a0a737635951982cee86bfded3b4422.jpg" alt="Craftwork 2">
+                        <div class="description">
+                            <h3>Triplets</h3>
+                            <p>Description of the craftwork...</p>
+                            <p>Price: R800.00</p>
+                        </div>
+                    </div>
+
+                    <div class="craft-item">
+                        <img src="https://i.pinimg.com/564x/ce/6f/04/ce6f044b4a362d66f1aab6ef3aaf6cc4.jpg" alt="Craftwork 2">
+                        <div class="description">
+                            <h3>Frozen In Time</h3>
+                            <p>Woman Frozen In time...</p>
+                            <p>Price: R550.00</p>
+                        </div>
+                    </div>
+
+                    <div class="craft-item">
+                        <img src="https://i.pinimg.com/564x/cf/27/b0/cf27b07847917404ed73082ddbbb5f13.jpg" alt="Craftwork 2">
+                        <div class="description">
+                            <h3>Handcrafter Bead Mugs</h3>
+                            <p>Set of 10 Handcrafted Mugs from African Tradition...</p>
+                            <p>Price: R600.00</p>
+                        </div>
+                    </div>
+
+                    <div class="craft-item">
+                        <img src="https://i.pinimg.com/564x/1c/f9/17/1cf91754d8bd1ad4b69e31823be87adc.jpg" alt="Craftwork 2">
+                        <div class="description">
+                            <h3>Traditions</h3>
+                            <p>Traditonal Womans African Wear...</p>
+                            <p>Price: R350.00</p>
+                        </div>
+                    </div>
+
+                    <div class="craft-item">
+                        <img src="https://i.pinimg.com/564x/ae/ba/ad/aebaaddb3e23901230a51f914f87f9dd.jpg" alt="Craftwork 2">
+                        <div class="description">
+                            <h3>Dinnerware</h3>
+                            <p>Colourful Beaded handcrafted tableware...</p>
+                            <p>Price: R250.00</p>
+                        </div>
+                    </div>
+
+                    <div class="craft-item">
+                        <img src="https://i.pinimg.com/564x/5c/81/1d/5c811d34188b4a74688636566fd3e43d.jpg" alt="Craftwork 2">
+                        <div class="description">
+                            <h3>Water Cooler Pots</h3>
+                            <p>Description of the craftwork...</p>
+                            <p>Price: R200.00</p>
+                        </div>
+                    </div>
+                    <!-- Add more craft items as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

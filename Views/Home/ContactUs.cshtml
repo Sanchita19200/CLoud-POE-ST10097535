@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Page styling */
+        body {
+            background-image: url('https://images.squarespace-cdn.com/content/v1/52440ddbe4b03b33d728e5ea/1535816411524-R1SRKMEU7UAR19WW9O16/P3142749.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.9; /* Adjust opacity value as needed */
+            font-family: Arial, sans-serif;
+            color: white; /* Set text color to black */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        /* Form styling */
+        form {
+            width: calc(50% - 10px); /* Adjust width and margin as needed */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                font-weight: bold;
+            }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+        /* Google Maps styling */
+        iframe {
+            width: calc(50% - 10px); /* Adjust width and margin as needed */
+            height: 450px; /* Adjust height as needed */
+            border: 0;
+            margin-top: 20px; /* Add margin to the top */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <div class="section">
+                <div class="section-header">Contact Us</div>
+                <div class="section-content">
+                    <p>Have questions or feedback? Feel free to reach out to us using the form below.</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Embed Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.117051227701!2d-122.4195869856823!3d37.77470297976118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a8b6d434b%3A0xd84c6b6d24085d06!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1649291231960!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+</body>
+</html>

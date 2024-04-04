@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Full page background image with light opacity */
+        body {
+            background-image: url('https://m.media-amazon.com/images/I/91+pQZxyxSL.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.9; /* Adjust opacity value as needed */
+        }
+
+        /* Custom styles for jumbotron */
+        .jumbotron {
+            background-color: rgba(255, 255, 255, 0.7); /* Light background color with opacity */
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        /* Custom styles for featured craftwork section */
+        .featured-section {
+            background-color: rgba(255, 255, 255, 0.7); /* Light background color with opacity */
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        /* Custom styles for About section */
+        .about-section {
+            background-color: rgba(255, 255, 255, 0.7); /* Light background color with opacity */
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to KhumaloCraft Emporium</h1>
+            <p>Discover Exquisite Handcrafted Treasures</p>
+            <a href="@Url.Action("MyWork", "Home")" class="btn btn-primary btn-lg" role="button">Explore Now</a>
+        </div>
+
+        
+
+       
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Page styling */
+        body {
+            background: linear-gradient(to bottom, Red, Orange); /* Gradient background */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Section styling */
+        .section {
+            width: 48%; /* Adjust width as needed */
+            background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+        /* Image styling */
+        .image-container {
+            width: 48%; /* Adjust width as needed */
+            height: 0; /* Set height to 0 to maintain aspect ratio */
+            padding-bottom: 48%; /* Set padding-bottom to maintain square aspect ratio (48% because width is 48%) */
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire container */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section 1: Why Choose Handcrafted Goods? -->
+        <div class="section">
+            <div class="section-header">Why Choose Handcrafted Goods?</div>
+            <div class="section-content">
+                Handcrafted goods possess a unique charm and character that mass-produced items simply cannot replicate. When you purchase handcrafted goods, you're not just buying a product; you're investing in artistry, tradition, and quality craftsmanship.
+            </div>
+        </div>
+
+        <!-- Section 2: Benefits of Handcrafted Items -->
+        <div class="section">
+            <div class="section-header">Benefits of Handcrafted Items</div>
+            <div class="section-content">
+                <ul>
+                    <!-- List of benefits -->
+                    <li>Unique and Original</li>
+                    <li>Artistic Expression</li>
+                    <li>High Quality</li>
+                    <li>Supporting Local and Independent Businesses</li>
+                    <li>Environmental Benefits</li>
+                    <li>Customization and Personalization</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Image Placeholder 1 -->
+        <div class="image-container">
+            <img class="image" src="https://i.pinimg.com/564x/46/44/75/4644759ef7dfafb22fb5ada55df96419.jpg" alt="Placeholder Image 1">
+        </div>
+
+        <!-- Image Placeholder 2 -->
+        <div class="image-container">
+            <img class="image" src="https://i.pinimg.com/564x/ea/b1/ed/eab1ed81c4a0537040efb8cdcd9faf9d.jpg" alt="Placeholder Image 2">
+        </div>
+    </div>
+
+</body>
+</html>
